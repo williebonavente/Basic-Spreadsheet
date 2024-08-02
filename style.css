@@ -1,0 +1,59 @@
+:root {
+    --background-color: #ffffff;
+    --label-background-color: lightgray;
+    --cell-background-color: white;
+    --text-color: black;
+    --border-color: #ccc;
+  }
+  
+  .dark-theme {
+    --background-color: #2e2e2e;
+    --label-background-color: #3a3a3a;
+    --cell-background-color: #4e4e4e;
+    --text-color: white;
+    --border-color: #666;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  #container {
+    display: grid;
+    grid-template-columns: 50px repeat(10, 100px); /* Adjusted width for columns */
+    grid-template-rows: 30px repeat(10, 30px); /* Adjusted height for rows */
+    gap: 1px; /* Added gap for better visibility */
+  }
+  
+  .label {
+    background-color: var(--label-background-color);
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    border: 1px solid var(--border-color); /* Added border for better separation */
+  }
+  
+  .cell {
+    background-color: var(--cell-background-color);
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    border: 1px solid var(--border-color); /* Added border for better separation */
+  }
+  
+  button {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
